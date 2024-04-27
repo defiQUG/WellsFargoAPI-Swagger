@@ -1,0 +1,9 @@
+{
+    "include": ["**/*.py"],
+    "exclude": ["**/node_modules", "**/venv"],
+    "reportMissingImports": true,
+    "reportMissingTypeStubs": false,
+    "pythonVersion": "3.8",
+    "pythonPlatform": "Linux",
+    "typeCheckingMode": "strict"
+  }
