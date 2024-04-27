@@ -1,3 +1,11 @@
+require('dotenv').config();
+
+const API_KEY = process.env.WELLS_FARGO_API_KEY;
+const vault = require('some-vault-service');
+
+async function getApiKey() {
+  return await vault.getSecret('wells-fargo-api-key');
+}
 const logger = require('./logger');
 
 app.use((req, res, next) => {
